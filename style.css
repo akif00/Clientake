@@ -272,14 +272,12 @@ li {
     margin: 20px;
 }
 
-.heading h2 {
-    margin: 15px;
+.about-content {
+    margin-bottom: 3rem;
 }
 
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.about-content h2 {
+    margin: 0 15px;
 }
 
 .about-content p {
@@ -288,14 +286,105 @@ li {
 }
 
 .about-content img {
-    margin: 15px;
-    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+    max-width: 420px;
+    max-height: 430px;
     width: 90%;
 }
 
 @media screen and (min-width: 700px) {
-    .about-content {}
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-content p {
+        max-width: 450px;
+    }
+    .about-content img {
+        margin: 15px;
+        max-width: 430px;
+        max-height: 430px;
+    }
 }
 
 
 /*end of about content */
+
+
+/* top law-firm */
+
+.top-firm {
+    margin: 20px 0 0;
+    height: auto;
+    background-color: #211d1d;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.top-firm strong {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 0.625rem 0 0.3125rem;
+    width: 100%;
+}
+
+.top-firm span {
+    font-size: 1.3rem;
+    margin: 0.625rem 0 0.3125rem;
+    width: 100%;
+}
+
+.top-logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: -0.875rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 1000px) {
+    .top-firm {
+        height: 5.5rem;
+        position: relative;
+        padding-left: 1.125rem;
+        padding-right: 1.125rem;
+        white-space: nowrap;
+        line-height: 1.5;
+        padding: 0;
+    }
+    .top-firm strong {
+        vertical-align: top;
+        width: auto;
+        margin: 0 0 0 1.5625rem;
+        padding-top: 1.4375rem;
+    }
+    .top-firm span {
+        line-height: 2.1875rem;
+        vertical-align: top;
+        width: auto;
+        border-left: 0.125rem solid #b8b8b8;
+        margin-left: 0.8125rem;
+        margin-top: 1.375rem;
+        padding-left: 1.0625rem;
+        display: inline-block;
+    }
+}
+
+
+/* end of top law-firm */
+
+.what-we-offer {
+    background-color: #b8b8b8;
+}
+
+.what-we-offer h1 {
+    padding: 10px 0;
+    color: #a80000;
+    text-transform: uppercase;
+    text-align: center;
+}
