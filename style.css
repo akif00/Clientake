@@ -412,6 +412,185 @@ li {
     display: inline-block;
 }
 
+.child-custody {
+    background: url(assets/childcustody.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.child-custody h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.law-spouses {
+    background: url(assets/Common-law-spouses.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.law-spouses h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.spousal-support {
+    background: url(assets/Spousal-support.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.spousal-support h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.child-support {
+    background: url(assets/Child-support.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.child-support h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.guardianship {
+    background: url(assets/Guardianship.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.guardianship h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.property-asset {
+    background: url(assets/Property-asset.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.property-asset h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.appeals {
+    background: url(assets/Appeals.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.appeals h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.divorce {
+    background: url(assets/Divorce.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.divorce h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.family-law {
+    background: url(assets/Family-law.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.family-law h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
+
+.criminal {
+    background: url(assets/Criminal.jpg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.criminal h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 120px;
+}
 
 @media screen and (min-width: 320px) {
     .banner {
@@ -435,10 +614,12 @@ li {
         padding-top: 180px;
         padding-left: 45px;
     }
+
+
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
     .banner {
         height: 60vh;
     }
@@ -449,5 +630,6 @@ li {
         padding-left: 80px;
     }
 }
+
 
 /*END css for our-services */
