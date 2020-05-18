@@ -124,6 +124,7 @@ li {
 }
 
 @media screen and (min-width: 600px) {
+
     #menu-bar,
     .menu-bg {
         display: none;
@@ -239,21 +240,21 @@ li {
 /* banner-images */
 
 .slide:first-child {
-    background: linear-gradient( 60deg, rgba(54, 50, 50, 0.521), rgba(204, 164, 164, 0.425) 98%), url("./assets/team-2.jpg") no-repeat center center;
+    background: linear-gradient(60deg, rgba(54, 50, 50, 0.521), rgba(204, 164, 164, 0.425) 98%), url("./assets/team-2.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
 .slide:nth-child(2) {
-    background: linear-gradient( 60deg, rgba(54, 50, 50, 0.621), rgba(204, 164, 164, 0.425) 98%), url("./assets/house.jpg") no-repeat center center;
+    background: linear-gradient(60deg, rgba(54, 50, 50, 0.621), rgba(204, 164, 164, 0.425) 98%), url("./assets/house.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
 .slide:nth-child(3) {
-    background: linear-gradient( 60deg, rgba(54, 50, 50, 0.521), rgba(204, 164, 164, 0.425) 98%), url("./assets/team.jpg") no-repeat;
+    background: linear-gradient(60deg, rgba(54, 50, 50, 0.521), rgba(204, 164, 164, 0.425) 98%), url("./assets/team.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -299,9 +300,11 @@ li {
         justify-content: center;
         align-items: center;
     }
+
     .about-content p {
         max-width: 450px;
     }
+
     .about-content img {
         margin: 15px;
         max-width: 430px;
@@ -357,12 +360,14 @@ li {
         line-height: 1.5;
         padding: 0;
     }
+
     .top-firm strong {
         vertical-align: top;
         width: auto;
         margin: 0 0 0 1.5625rem;
         padding-top: 1.4375rem;
     }
+
     .top-firm span {
         line-height: 2.1875rem;
         vertical-align: top;
@@ -388,3 +393,61 @@ li {
     text-transform: uppercase;
     text-align: center;
 }
+
+
+
+/*START css for our-services */
+
+.banner {
+    background: url(assets/Banner-services.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner h1 {
+    padding-top: 225px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+
+@media screen and (min-width: 320px) {
+    .banner {
+        height: 35vh;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        padding-top: 135px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        padding-top: 180px;
+        padding-left: 45px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner h1 {
+        font-size: 75px;
+        padding-top: 310px;
+        padding-left: 80px;
+    }
+}
+
+/*END css for our-services */
