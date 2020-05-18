@@ -384,7 +384,7 @@ li {
 /* end of top law-firm */
 
 .what-we-offer {
-    background-color: #b8b8b8;
+    background-color: #d1cdcd;
 }
 
 .what-we-offer h1 {
@@ -394,6 +394,63 @@ li {
     text-align: center;
 }
 
+
+.card-one img {
+    display: block;
+    height: 100%;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.card-two {
+    display: block;
+    height: 100%;
+    width: 90%;
+    max-width: 380px;
+    margin: 15px auto;
+}
+
+.sub-card-one img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 380px;
+}
+
+.child-cards img {
+    height: 100%;
+    width: 100%;
+    max-width: 380px;
+    margin: 15px auto 0;
+}
+
+@media screen and (min-width: 700px) {
+    .offer-cards {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card-one,
+    .card-two {
+        height: 600px;
+    }
+
+    .sub-card-one img {
+        height: 205px;
+        width: 95%;
+    }
+
+    .sub-card-childs {
+        display: flex;
+    }
+
+    .child-cards img {
+        width: 90%;
+        height: 180px;
+        margin: 15px auto 0;
+    }
+}
 
 
 /*START css for our-services */
