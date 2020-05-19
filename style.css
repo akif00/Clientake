@@ -385,6 +385,7 @@ li {
 
 .what-we-offer {
     background-color: #d1cdcd;
+    padding: 20px 0 30px;
 }
 
 .what-we-offer h1 {
@@ -396,59 +397,49 @@ li {
 
 
 .card-one img {
-    display: block;
+    display: flex;
     height: 100%;
     width: 90%;
     margin: 15px auto;
 }
 
-.card-two {
-    display: block;
+.card-image-one {
+    display: flex;
     height: 100%;
     width: 90%;
-    max-width: 380px;
     margin: 15px auto;
 }
 
-.sub-card-one img {
-    display: block;
+.card-images {
+    display: flex;
     height: 100%;
-    width: 100%;
-    max-width: 380px;
+    width: 90%;
+    margin: 15px auto;
 }
 
-.child-cards img {
-    height: 100%;
-    width: 100%;
-    max-width: 380px;
-    margin: 15px auto 0;
-}
-
-@media screen and (min-width: 700px) {
-    .offer-cards {
+@media screen and (min-width: 600px) {
+    .sub-card-childs {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-one img {
+        width: 95%;
+        max-width: 800px;
+    }
+
+    .card-image-one {
         max-width: 800px;
         margin: 0 auto;
-    }
-
-    .card-one,
-    .card-two {
-        height: 600px;
-    }
-
-    .sub-card-one img {
-        height: 205px;
         width: 95%;
     }
 
-    .sub-card-childs {
-        display: flex;
-    }
-
-    .child-cards img {
+    .card-images {
+        height: 100%;
         width: 90%;
-        height: 180px;
-        margin: 15px auto 0;
+        margin: 15px auto;
     }
 }
 
@@ -469,185 +460,7 @@ li {
     display: inline-block;
 }
 
-.child-custody {
-    background: url(assets/childcustody.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
 
-.child-custody h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.law-spouses {
-    background: url(assets/Common-law-spouses.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.law-spouses h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.spousal-support {
-    background: url(assets/Spousal-support.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.spousal-support h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.child-support {
-    background: url(assets/Child-support.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.child-support h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.guardianship {
-    background: url(assets/Guardianship.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.guardianship h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.property-asset {
-    background: url(assets/Property-asset.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.property-asset h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.appeals {
-    background: url(assets/Appeals.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.appeals h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.divorce {
-    background: url(assets/Divorce.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.divorce h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.family-law {
-    background: url(assets/Family-law.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.family-law h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
-
-.criminal {
-    background: url(assets/Criminal.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.criminal h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
-    padding-top: 120px;
-}
 
 @media screen and (min-width: 320px) {
     .banner {
