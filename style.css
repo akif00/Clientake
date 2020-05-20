@@ -17,9 +17,12 @@ li {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
 }
+
+
+/* Home */
 
 
 /* menu-bar-styles */
@@ -184,6 +187,19 @@ li {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .logo-top {
+        margin-top: 5px;
+        height: 40px;
+    }
+    #nav-bar {
+        height: 60px;
+    }
+    #nav-bar ul li a {
+        font-size: 1.4rem;
+    }
+}
+
 
 /* end of nav-bar styles*/
 
@@ -209,6 +225,23 @@ li {
     opacity: 1;
 }
 
+.slide .home-content p span {
+    font-size: 50px;
+    line-height: 0.6em;
+    opacity: 0.8;
+}
+
+.slide .home-content p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.slide .home-content cite {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 30px;
+}
+
 .slide .home-content {
     color: #fff;
     position: absolute;
@@ -222,11 +255,6 @@ li {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-}
-
-.slide .home-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
 }
 
 .slide.current .home-content {
@@ -259,6 +287,20 @@ li {
     width: 100%;
 }
 
+@media screen and (min-width: 700px) {
+    .slide .home-content p {
+        width: 550px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .slide .home-content p {
+        width: 900px;
+        font-size: 3rem;
+    }
+}
+
 
 /* end of home styles */
 
@@ -286,11 +328,10 @@ li {
 }
 
 .about-content img {
-    display: block;
-    margin: 15px auto;
-    max-width: 420px;
-    max-height: 430px;
+    display: flex;
+    height: 100%;
     width: 90%;
+    margin: 15px auto;
 }
 
 @media screen and (min-width: 700px) {
@@ -300,12 +341,26 @@ li {
         align-items: center;
     }
     .about-content p {
-        max-width: 450px;
+        max-width: 600px;
     }
-    .about-content img {
-        margin: 15px;
-        max-width: 430px;
-        max-height: 430px;
+    .get-to-know-image {
+        height: 100%;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-content {
+        display: flex;
+    }
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    .about-content p {
+        font-size: 20px;
     }
 }
 
@@ -378,6 +433,9 @@ li {
 
 /* end of top law-firm */
 
+
+/* What we offer */
+
 .what-we-offer {
     background-color: #d1cdcd;
     padding: 20px 0 30px;
@@ -390,11 +448,76 @@ li {
     text-align: center;
 }
 
+.card-one {
+    position: relative;
+}
+
 .card-one img {
     display: flex;
     height: 100%;
     width: 90%;
     margin: 15px auto;
+}
+
+.card-overlay {
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    margin: 15px auto;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #211d1dd7;
+}
+
+.card-one:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.card-content h2 {
+    text-transform: uppercase;
+}
+
+.card-content p {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.card-content a {
+    padding-top: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.card-content i {
+    padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .card-content h2 {
+        font-size: 1.67rem;
+        margin: 10px 0;
+    }
+    .card-content p {
+        font-size: 1.2rem;
+    }
+    .card-content a {
+        font-size: 20px;
+    }
 }
 
 .card-image-one {
@@ -412,6 +535,10 @@ li {
 }
 
 @media screen and (min-width: 600px) {
+    .card-overlay {
+        width: 95%;
+        max-width: 800px;
+    }
     .sub-card-childs {
         display: flex;
         justify-content: center;
@@ -433,3 +560,23 @@ li {
         margin: 15px auto;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .offer-cards {
+        display: flex;
+    }
+    .card-one img {
+        margin: 0 15px;
+        height: 98%;
+    }
+    .card-overlay {
+        left: 15px;
+        height: 98%;
+    }
+}
+
+
+/* End of what we offer */
+
+
+/* End of Home */
