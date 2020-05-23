@@ -234,6 +234,7 @@ li {
 .slide .home-content p {
     font-size: 1.2rem;
     font-weight: 700;
+    width: 90%;
 }
 
 .slide .home-content cite {
@@ -567,7 +568,7 @@ li {
         height: 98%;
     }
     .card-overlay {
-        left: 15px;
+        left: 12px;
         height: 98%;
     }
 }
@@ -848,6 +849,147 @@ li {
 
 
 /* End of what we offer */
+
+
+/* stratigic advantage */
+
+.our-stratigic-advantage h1 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #a80000;
+    text-align: center;
+}
+
+.stratigic-cards {
+    text-align: center;
+}
+
+.stratigic-cards p {
+    width: 85%;
+    margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .stratigic-cards {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .stratigic-cards {
+        display: flex;
+        margin: 30px auto;
+    }
+    .stratigic_carousel {
+        display: none;
+    }
+}
+
+
+/* End of stratigic advantage */
+
+
+/* stratigic_carousel */
+
+.stratigic_carousel {
+    position: relative;
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.stratigic__track {
+    position: relative;
+    height: 100%;
+    transition: transform 600ms ease-in;
+}
+
+.stratigic__track-container {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.stratigic__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.stratigic__slide img {
+    margin: 40px auto 20px;
+}
+
+.stratigic__slide p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stratigic_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #a80000;
+    color: #fff;
+    outline: none;
+}
+
+.stratigic_btn i {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.stratigic_btn:hover {
+    background-color: #211d1d;
+}
+
+.carousel__button--left {
+    left: -25px;
+}
+
+.carousel__button--right {
+    right: -25px;
+}
+
+.stratigic_carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    cursor: pointer;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    outline: none;
+}
+
+.carousel__indicator.current-stratigic-slide {
+    background: #a80000;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .stratigic_carousel__nav {
+        display: none;
+    }
+}
+
+
+/* End of stratigic_carousel */
 
 
 /* End of Home */
