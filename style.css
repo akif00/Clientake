@@ -992,4 +992,188 @@ li {
 /* End of stratigic_carousel */
 
 
+/* victories-carosuel */
+
+.victories-carousel {
+    position: relative;
+    margin-top: 30px;
+    background-color: #272222;
+    color: #fff;
+}
+
+.victories-carousel h1 {
+    color: #a80000;
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.slideshow {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.victory-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.navcube {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #fff;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.navcube:hover {
+    background-color: #a80000;
+}
+
+.navcube:focus {
+    background-color: #a80000;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.victory-slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.victory {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.victory h2 {
+    margin-bottom: 10px;
+}
+
+.victory p {
+    width: 90%;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+#r1:checked~.slide-1 {
+    margin-left: 0;
+}
+
+#r2:checked~.slide-1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.slide-1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.slide-1 {
+    margin-left: -60%;
+}
+
+@media screen and (min-width: 768px) {
+    .slideshow {
+        height: 200px;
+    }
+    .victory {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/* End of victories-carosuel */
+
+
+/* footer */
+
+.clientake-footer,
+.end-quote {
+    width: 90%;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    margin: 0 0 10px;
+}
+
+.clientake-address h2 span {
+    line-height: 1.8;
+    padding-left: 5px;
+    border-left: 2px solid black;
+}
+
+.clientake-address h2 a {
+    cursor: pointer;
+    color: #a80000;
+    border-bottom: 1px solid #a80000;
+}
+
+.social-network i {
+    cursor: pointer;
+    color: #a80000;
+    margin: 20px 15px 30px;
+    font-size: 1.5rem;
+}
+
+.social-network i:hover {
+    color: #fff;
+    background-color: #a80000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.clientake-copyrigth {
+    background-color: #211d1d;
+    color: #fff;
+}
+
+.copyrigth-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.copyrigth-content p {
+    padding: 20px 10px;
+}
+
+.copyrigth-content p span {
+    padding: 0 8px;
+    border-left: 2px solid #fff;
+}
+
+.copyrigth-content p span a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.end-quote {
+    width: 90%;
+    margin: 20px auto 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* End of footer */
+
+
 /* End of Home */
