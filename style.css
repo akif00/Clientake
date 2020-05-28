@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Sarabun", sans-serif;
 }
@@ -140,6 +144,10 @@ li {
 /* nav-bar */
 
 #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     background-color: #272822;
     background-image: linear-gradient(326deg, #272822b2 0%, #da2d2dbe 74%);
 }
@@ -1104,8 +1112,26 @@ input[name="r"] {
 .clientake-footer,
 .end-quote {
     width: 90%;
-    margin: 40px auto 20px;
+    margin: 10px auto 20px;
     text-align: center;
+}
+
+.back-to-top p {
+    font-weight: 700;
+    color: white;
+    width: 130px;
+    margin: 0 auto 30px;
+    padding: 8px 5px;
+    border-radius: 3px;
+    background-color: rgb(0, 46, 88);
+}
+
+.back-to-top p i {
+    padding-left: 5px;
+}
+
+.back-to-top p:hover {
+    background-color: #211d1d;
 }
 
 .footer-logo {
@@ -1132,10 +1158,7 @@ input[name="r"] {
 }
 
 .social-network i:hover {
-    color: #fff;
-    background-color: #a80000;
-    padding: 10px;
-    border-radius: 50%;
+    color: rgb(0, 46, 88);
 }
 
 .clientake-copyrigth {
