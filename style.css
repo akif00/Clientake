@@ -1590,3 +1590,301 @@ input[name="r"] {
 
 
 /* End of Home */
+
+
+/* lets connect */
+
+.lets-connect {
+    text-align: center;
+    background-color: #192e3e;
+    color: #fff;
+    height: 100%;
+}
+
+.lets-connect-logo {
+    cursor: pointer;
+    margin: 50px 0 20px;
+}
+
+.lets-connect-banner {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-information {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+}
+
+.clientake-address h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.clientake-address p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.grey-seperator {
+    background: #e0e0e0;
+    height: 2px;
+    width: 90%;
+    max-width: 30.5rem;
+    margin: 1.0625rem auto 0.9375rem;
+}
+
+.clientake-contant-info {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.clientake-contant-info h2 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.clientake-contant-info span {
+    margin-left: 10px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.clientake-contant-info span a {
+    color: #a80000;
+    border-bottom: 1px solid #a80000;
+}
+
+.business-hours h3 {
+    text-transform: uppercase;
+    color: #a80000;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.business-hours p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-page-list {
+    margin: 25px 0 0;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.contact-page-list h4 {
+    margin: 20px 0 10px;
+    text-align: center;
+    color: #a80000;
+    font-weight: 700;
+}
+
+.contact-col {
+    width: 90%;
+    margin: 10px auto 0;
+    line-height: 1.5;
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid #e0e0e0;
+}
+
+.contact-col p {
+    color: #8b8a8a;
+    width: 75%;
+    font-weight: 500;
+}
+
+.contact-col a {
+    cursor: pointer;
+    color: #a80000;
+}
+
+@media screen and (min-width: 500px) {
+    .contact-page-list {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .contact-col {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* contact-page */
+
+.contact-page {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-page h1 {
+    max-width: 400px;
+    margin: 0 auto;
+    color: #a80000;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.contact-page p {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* form style*/
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* Error */
+
+.error-block {
+    padding: 12px;
+    width: 85%;
+    margin: 10px auto;
+    background: #ffb9c5;
+    color: #721121;
+    border-radius: 3px;
+    display: none;
+}
+
+.error {
+    font-size: 1.1em;
+}
+
+.success {
+    background: #c1ffb9;
+    color: #16790d;
+}
+
+
+/* Label + Input */
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.input-info {
+    text-align: left;
+    margin-top: -18px;
+    margin-bottom: 24px;
+    color: #888;
+}
+
+.input {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #1d1d1d;
+    margin-bottom: 24px;
+    outline: 0;
+}
+
+.input:focus {
+    border: 2px solid #8b8a8a;
+}
+
+.comment-box {
+    width: 100%;
+    height: 80px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #1d1d1d;
+    margin-bottom: 24px;
+    outline: 0;
+}
+
+.comment-box:focus {
+    border: 2px solid #8b8a8a;
+}
+
+.input-submit {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    background: #a80000;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: 0.15s ease-in-out background;
+    outline: none;
+}
+
+.input-submit:hover,
+.input-submit:focus {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    .header-images {
+        display: none;
+    }
+    .lets-connect {
+        background: url("./assets/lets-connect-banner.jpg") no-repeat center center;
+        background-size: cover;
+        padding: 60px 20px 30px;
+    }
+    .contact-information {
+        background-color: rgba(255, 255, 255, 0.822);
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .contact-page {
+        background-color: rgba(255, 255, 255, 0.822);
+        max-width: 600px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-consulation-wrap {
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .contact-information {
+        width: 500px;
+        margin: 20px auto;
+    }
+    .contact-page {
+        width: 500px;
+        margin: 20px auto;
+    }
+}
+
+
+/*end of form style*/
