@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Sarabun", sans-serif;
 }
@@ -125,7 +129,6 @@ li {
 }
 
 @media screen and (min-width: 600px) {
-
   #menu-bar,
   .menu-bg {
     display: none;
@@ -137,6 +140,10 @@ li {
 /* nav-bar */
 
 #nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   background-color: #272822;
   background-image: linear-gradient(326deg, #272822b2 0%, #da2d2dbe 74%);
 }
@@ -264,9 +271,11 @@ li {
 /* banner-images */
 
 .slide:first-child {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team-2.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -274,9 +283,11 @@ li {
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.621),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/house.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -284,9 +295,11 @@ li {
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -506,6 +519,7 @@ li {
 }
 
 .card-content a {
+  cursor: pointer;
   padding-top: 15px;
   color: white;
   font-weight: 700;
@@ -861,6 +875,385 @@ li {
   padding: 10px;
 }
 
+/* Modals of what we offer cards */
+
+/* modal-1 */
+
+.modal-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal p {
+  width: 90%;
+  font-weight: 600;
+  margin: 10px auto 20px;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-two */
+
+.modal-bg-two {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-two {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-two h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-two h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-two p {
+  width: 90%;
+  font-weight: 600;
+  margin: 10px auto 20px;
+}
+
+.modal-two-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-two 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-two {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-two-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-three */
+
+.modal-bg-three {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-three {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-three h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 10px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-three h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-three p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-three-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-three 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-three {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-three-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-four */
+
+.modal-bg-four {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-four {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-four h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 10px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-four h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-four p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-four-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-four 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-four {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-four-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-five */
+
+.modal-bg-five {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-five {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-five h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-five h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-five p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-five-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-five {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-five-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/*End of Modals of what we offer cards */
+
 /* End of what we offer */
 
 /* End of Home */
@@ -900,9 +1293,7 @@ li {
   }
 }
 
-
 /* End of stratigic advantage */
-
 
 /* stratigic_carousel */
 
@@ -1003,9 +1394,7 @@ li {
   }
 }
 
-
 /* End of stratigic_carousel */
-
 
 /* victories-carosuel */
 
@@ -1082,19 +1471,19 @@ input[name="r"] {
   margin: 0 auto;
 }
 
-#r1:checked~.slide-1 {
+#r1:checked ~ .slide-1 {
   margin-left: 0;
 }
 
-#r2:checked~.slide-1 {
+#r2:checked ~ .slide-1 {
   margin-left: -20%;
 }
 
-#r3:checked~.slide-1 {
+#r3:checked ~ .slide-1 {
   margin-left: -40%;
 }
 
-#r4:checked~.slide-1 {
+#r4:checked ~ .slide-1 {
   margin-left: -60%;
 }
 
@@ -1111,21 +1500,40 @@ input[name="r"] {
   }
 }
 
-
 /* End of victories-carosuel */
-
 
 /* footer */
 
 .clientake-footer,
 .end-quote {
   width: 90%;
-  margin: 40px auto 20px;
+  margin: 10px auto 20px;
   text-align: center;
 }
 
+.back-to-top {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.back-to-top p {
+  font-weight: 700;
+  color: white;
+  padding: 8px 5px;
+  border-radius: 3px;
+  background-color: rgb(0, 46, 88);
+}
+
+.back-to-top p i {
+  padding-left: 5px;
+}
+
+.back-to-top p:hover {
+  background-color: #211d1d;
+}
+
 .footer-logo {
-  margin: 0 0 10px;
+  margin: 20px 0 10px;
 }
 
 .clientake-address h2 span {
@@ -1148,10 +1556,7 @@ input[name="r"] {
 }
 
 .social-network i:hover {
-  color: #fff;
-  background-color: #a80000;
-  padding: 10px;
-  border-radius: 50%;
+  color: rgb(0, 46, 88);
 }
 
 .clientake-copyrigth {
@@ -1188,17 +1593,11 @@ input[name="r"] {
   line-height: 1.5;
 }
 
-
 /* End of footer */
 
-
 /* End of Home */
 
-
-
 /* End of Home */
-
-
 
 /*START css for our-services */
 
@@ -1251,6 +1650,5 @@ input[name="r"] {
     padding-left: 80px;
   }
 }
-
 
 /*END css for our-services */
