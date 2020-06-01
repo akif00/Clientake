@@ -93,4 +93,26 @@ modaleightClose.addEventListener('click', function () {
     modalBgeight.classList.remove('modal-eight-active');
 });
 
+// modal-nine
+const modalnine = document.querySelector('.divorce');
+const modalBgnine = document.querySelector('.modal-bg-nine');
+const modalnineClose = document.querySelector('.modal-nine-close');
+modalnine.addEventListener('click', function () {
+    modalBgnine.classList.add('modal-nine-active');
+});
+modalnineClose.addEventListener('click', function () {
+    modalBgnine.classList.remove('modal-nine-active');
+});
+
+// modal-ten
+const modalten = document.querySelector('.criminal');
+const modalBgten = document.querySelector('.modal-bg-ten');
+const modaltenClose = document.querySelector('.modal-ten-close');
+modalten.addEventListener('click', function () {
+    modalBgten.classList.add('modal-ten-active');
+});
+modaltenClose.addEventListener('click', function () {
+    modalBgten.classList.remove('modal-ten-active');
+});
+
 // End Of Modals 

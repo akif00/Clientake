@@ -1849,6 +1849,158 @@ input[name="r"] {
   font-size: 1.5rem;
 }
 
+/* modal-nine */
+
+.modal-bg-nine {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-nine {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-nine h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-nine h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-nine p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-nine-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-nine {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-nine-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-ten */
+
+.modal-bg-ten {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-ten {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-ten h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-ten h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-ten p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-ten-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-ten {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-ten-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
 .services-top {
   margin: 15px;
 }
