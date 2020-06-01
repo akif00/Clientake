@@ -1697,6 +1697,158 @@ input[name="r"] {
   font-size: 1.5rem;
 }
 
+/* modal-seven */
+
+.modal-bg-seven {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-seven {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-seven h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-seven h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-seven p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-seven-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-seven {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-seven-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* modal-eight */
+
+.modal-bg-eight {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-eight {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-eight h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-eight h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-eight p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-eight-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-eight {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.modal-eight-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
 .services-top {
   margin: 15px;
 }

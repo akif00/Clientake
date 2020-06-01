@@ -61,7 +61,7 @@ modalfiveClose.addEventListener('click', function () {
 });
 
 // modal-six
-const modalsix = document.querySelector('.gurdianship');
+const modalsix = document.querySelector('.guardianship');
 const modalBgsix = document.querySelector('.modal-bg-six');
 const modalsixClose = document.querySelector('.modal-six-close');
 modalsix.addEventListener('click', function () {
@@ -69,6 +69,28 @@ modalsix.addEventListener('click', function () {
 });
 modalsixClose.addEventListener('click', function () {
     modalBgsix.classList.remove('modal-six-active');
+});
+
+// modal-seven
+const modalseven = document.querySelector('.appeals');
+const modalBgseven = document.querySelector('.modal-bg-seven');
+const modalsevenClose = document.querySelector('.modal-seven-close');
+modalseven.addEventListener('click', function () {
+    modalBgseven.classList.add('modal-seven-active');
+});
+modalsevenClose.addEventListener('click', function () {
+    modalBgseven.classList.remove('modal-seven-active');
+});
+
+// modal-eight
+const modaleight = document.querySelector('.common-law-spouses');
+const modalBgeight = document.querySelector('.modal-bg-eight');
+const modaleightClose = document.querySelector('.modal-eight-close');
+modaleight.addEventListener('click', function () {
+    modalBgeight.classList.add('modal-eight-active');
+});
+modaleightClose.addEventListener('click', function () {
+    modalBgeight.classList.remove('modal-eight-active');
 });
 
 // End Of Modals 
