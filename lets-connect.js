@@ -1,3 +1,11 @@
+function onClickMenu() {
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+
 // consulation form
 // Form
 const form = document.querySelector('.form');
