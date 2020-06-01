@@ -129,6 +129,7 @@ li {
 }
 
 @media screen and (min-width: 600px) {
+
   #menu-bar,
   .menu-bg {
     display: none;
@@ -271,11 +272,9 @@ li {
 /* banner-images */
 
 .slide:first-child {
-  background: linear-gradient(
-      60deg,
+  background: linear-gradient(60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%
-    ),
+      rgba(204, 164, 164, 0.425) 98%),
     url("./assets/team-2.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -283,11 +282,9 @@ li {
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(
-      60deg,
+  background: linear-gradient(60deg,
       rgba(54, 50, 50, 0.621),
-      rgba(204, 164, 164, 0.425) 98%
-    ),
+      rgba(204, 164, 164, 0.425) 98%),
     url("./assets/house.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -295,11 +292,9 @@ li {
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(
-      60deg,
+  background: linear-gradient(60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%
-    ),
+      rgba(204, 164, 164, 0.425) 98%),
     url("./assets/team.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -937,6 +932,7 @@ li {
     opacity: 0;
     z-index: -1;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1012,6 +1008,7 @@ li {
     opacity: 0;
     z-index: -1;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1087,6 +1084,7 @@ li {
     opacity: 0;
     z-index: -1;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1162,6 +1160,7 @@ li {
     opacity: 0;
     z-index: -1;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1237,6 +1236,7 @@ li {
     opacity: 0;
     z-index: -1;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1471,19 +1471,19 @@ input[name="r"] {
   margin: 0 auto;
 }
 
-#r1:checked ~ .slide-1 {
+#r1:checked~.slide-1 {
   margin-left: 0;
 }
 
-#r2:checked ~ .slide-1 {
+#r2:checked~.slide-1 {
   margin-left: -20%;
 }
 
-#r3:checked ~ .slide-1 {
+#r3:checked~.slide-1 {
   margin-left: -40%;
 }
 
-#r4:checked ~ .slide-1 {
+#r4:checked~.slide-1 {
   margin-left: -60%;
 }
 
@@ -1605,49 +1605,111 @@ input[name="r"] {
   background: url(assets/Banner-services.jpg) no-repeat;
   background-size: cover;
   width: 100%;
+  display: flex;
+  align-items: baseline;
 }
 
 .banner h1 {
   padding-top: 225px;
-  padding-left: 80px;
+  padding-left: 50px;
   text-transform: uppercase;
   font-weight: bolder;
-  display: inline-block;
+  display: inline;
 }
 
-@media screen and (min-width: 320px) {
-  .banner {
-    height: 35vh;
+.services {
+  padding: 20px 0 30px;
+}
+
+/* modal-six */
+
+.modal-bg-six {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-six {
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-six h1 {
+  font-size: 1.7rem;
+  color: #a80000;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(122, 120, 120);
+}
+
+.modal-six h2 {
+  text-transform: uppercase;
+  margin: 10px 15px;
+}
+
+.modal-six p {
+  width: 90%;
+  font-weight: 600;
+  margin: 0px auto 20px;
+}
+
+.modal-six-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  animation: show-modal-five 0.3s;
+  transform: scale(1);
+}
+
+@keyframes show-modal-six {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
   }
 
-  .banner h1 {
-    font-size: 30px;
-    padding-top: 135px;
-    padding-left: 25px;
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
   }
 }
 
-@media screen and (min-width: 700px) {
-  .banner {
-    height: 50vh;
-  }
-
-  .banner h1 {
-    font-size: 55px;
-    padding-top: 180px;
-    padding-left: 45px;
-  }
+.modal-six-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1000px) {
-  .banner {
-    height: 60vh;
-  }
+.services-top {
+  margin: 15px;
+}
+
+.services-top p {
+  padding-left: 12px;
+}
+
+@media screen and (min-width: 1024px) {
 
   .banner h1 {
-    font-size: 75px;
-    padding-top: 310px;
-    padding-left: 80px;
+    font-size: 45px;
+    padding-left: 70px;
   }
 }
 
@@ -1770,6 +1832,7 @@ input[name="r"] {
     max-width: 450px;
     margin: 0 auto;
   }
+
   .contact-col {
     display: flex;
     justify-content: space-between;
@@ -1908,16 +1971,19 @@ input[name="r"] {
   .header-images {
     display: none;
   }
+
   .lets-connect {
     background: url("./assets/lets-connect-banner.jpg") no-repeat center center;
     background-size: cover;
     padding: 60px 20px 30px;
   }
+
   .contact-information {
     background-color: rgba(255, 255, 255, 0.822);
     max-width: 600px;
     margin: 20px auto;
   }
+
   .contact-page {
     background-color: rgba(255, 255, 255, 0.822);
     max-width: 600px;
@@ -1933,10 +1999,12 @@ input[name="r"] {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+
   .contact-information {
     width: 500px;
     margin: 20px auto;
   }
+
   .contact-page {
     width: 500px;
     margin: 20px auto;
