@@ -1597,7 +1597,71 @@ input[name="r"] {
 
 /* End of Home */
 
-/* End of Home */
+/*START css for our-people */
+
+.We {
+  background: url(assets/people-banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.We h1 {
+  color: white;
+  padding-top: 245px;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: inline;
+}
+
+.text-content {
+  display: grid;
+  justify-content: left;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-content h2 {
+  color: #a80000;
+  text-align: left;
+}
+
+.text-content p {
+  padding-top: 16px;
+}
+
+@media screen and (min-width:320px) {
+  .We {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .We {
+    height: 80vh;
+  }
+
+  .We h1 {
+    font-size: 60px;
+    text-align: justify;
+    padding-top: 320px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .We h1 {
+    font-size: 70px;
+    display: inline;
+    padding-top: 400px;
+  }
+}
+
+/*END css for our-people */
+
+
 
 /*START css for our-services */
 
