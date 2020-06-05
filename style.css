@@ -129,7 +129,6 @@ li {
 }
 
 @media screen and (min-width: 600px) {
-
   #menu-bar,
   .menu-bg {
     display: none;
@@ -272,9 +271,11 @@ li {
 /* banner-images */
 
 .slide:first-child {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team-2.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -282,9 +283,11 @@ li {
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.621),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/house.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -292,9 +295,11 @@ li {
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -1471,19 +1476,19 @@ input[name="r"] {
   margin: 0 auto;
 }
 
-#r1:checked~.slide-1 {
+#r1:checked ~ .slide-1 {
   margin-left: 0;
 }
 
-#r2:checked~.slide-1 {
+#r2:checked ~ .slide-1 {
   margin-left: -20%;
 }
 
-#r3:checked~.slide-1 {
+#r3:checked ~ .slide-1 {
   margin-left: -40%;
 }
 
-#r4:checked~.slide-1 {
+#r4:checked ~ .slide-1 {
   margin-left: -60%;
 }
 
@@ -1600,7 +1605,7 @@ input[name="r"] {
 /*START css for our-people */
 
 .We {
-  background: url(assets/people-banner.jpg) no-repeat;
+  background: url(assets/home-banner-5.png) no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -1609,8 +1614,8 @@ input[name="r"] {
 
 .We h1 {
   color: white;
-  padding-top: 245px;
-  padding-left: 50px;
+  padding-top: 275px;
+  padding-left: 20px;
   text-transform: uppercase;
   font-weight: bolder;
   display: inline;
@@ -1633,7 +1638,38 @@ input[name="r"] {
   padding-top: 16px;
 }
 
-@media screen and (min-width:320px) {
+.people-card {
+  background-color: #e0e0e0;
+  height: 450px;
+  width: 280px;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.people-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.people-card h2 {
+  color: #a80000;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.people-card img {
+  height: 240px;
+  width: 240px;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 320px) {
   .We {
     height: 350px;
   }
@@ -1651,10 +1687,11 @@ input[name="r"] {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .We h1 {
     font-size: 70px;
     display: inline;
+    padding-left: 70px;
     padding-top: 400px;
   }
 
@@ -1668,8 +1705,6 @@ input[name="r"] {
 }
 
 /*END css for our-people */
-
-
 
 /*START css for our-services */
 
@@ -2081,8 +2116,7 @@ input[name="r"] {
   padding-left: 12px;
 }
 
-
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) {
   .banner {
     height: 350px;
   }
@@ -2092,12 +2126,11 @@ input[name="r"] {
   }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
   .banner h1 {
     padding-top: 300px;
   }
 }
-
 
 @media screen and (min-width: 1000px) {
   .banner {
@@ -2111,12 +2144,11 @@ input[name="r"] {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .banner h1 {
     padding-top: 430px;
   }
 }
-
 
 /*END css for our-services */
 
