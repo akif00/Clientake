@@ -1597,100 +1597,116 @@ input[name="r"] {
 
 /*START css for our-people */
 
-.We {
-    background: url(assets/home-banner-5.png) no-repeat;
+.Who-we-are {
+    background: linear-gradient( 60deg, rgba(51, 37, 37, 0.521), rgba(46, 4, 4, 0.425) 10%), url(assets/who-we-are-banner-image.jpg) no-repeat;
     background-size: cover;
     width: 100%;
+    height: 450px;
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.We h1 {
-    color: white;
-    padding-top: 275px;
-    padding-left: 20px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    display: inline;
+.Who-we-are h1 {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .Who-we-are {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Who-we-are h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .Who-we-are {
+        height: 800px;
+    }
 }
 
 .text-content {
-    display: grid;
-    justify-content: left;
-    padding-top: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 20px;
 }
 
 .text-content h2 {
     color: #a80000;
-    text-align: left;
 }
 
 .text-content p {
-    padding-top: 16px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+/* our peoples-cards */
+
+.our-team {
+    background-color: rgb(44, 37, 37);
+    color: white;
+    padding: 20px 0;
+}
+
+.card-photo {
+    width: 100%;
 }
 
 .people-card {
-    background-color: #e0e0e0;
-    height: 450px;
-    width: 280px;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    line-height: 1.5;
 }
 
-.people-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.people-card h2,
+p {
+    padding: 10px;
 }
 
-.people-card h2 {
-    color: #a80000;
-    text-align: center;
-    padding-top: 18px;
+.people-card button {
+    cursor: pointer;
+    outline: none;
+    padding: 8px 10px;
+    margin: 10px;
+    background-color: #a80000;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 .people-card img {
-    height: 240px;
-    width: 240px;
-    align-items: center;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-@media screen and (min-width: 320px) {
-    .We {
-        height: 350px;
+@media (min-width: 768px) {
+    .people-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .We {
-        height: 80vh;
-    }
-    .We h1 {
-        font-size: 60px;
-        text-align: justify;
-        padding-top: 320px;
+@media (min-width: 1024px) {
+    .people-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .We h1 {
-        font-size: 70px;
-        display: inline;
-        padding-left: 70px;
-        padding-top: 400px;
-    }
-    .text-content h2 {
-        font-size: 40px;
-    }
-    .text-content p {
-        font-size: 16px;
+@media (min-width: 1440px) {
+    .people-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -1725,6 +1741,12 @@ input[name="r"] {
 @media screen and (min-width: 1024px) {
     .services-banner h1 {
         font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .services-banner {
+        height: 800px;
     }
 }
 
