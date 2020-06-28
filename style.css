@@ -129,7 +129,6 @@ li {
 }
 
 @media screen and (min-width: 600px) {
-
   #menu-bar,
   .menu-bg {
     display: none;
@@ -270,9 +269,11 @@ li {
 /* banner-images */
 
 .slide:first-child {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team-2.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -280,9 +281,11 @@ li {
 }
 
 .slide:nth-child(2) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.621),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/house.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -290,9 +293,11 @@ li {
 }
 
 .slide:nth-child(3) {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(204, 164, 164, 0.425) 98%),
+      rgba(204, 164, 164, 0.425) 98%
+    ),
     url("./assets/team.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -1469,19 +1474,19 @@ input[name="r"] {
   margin: 0 auto;
 }
 
-#r1:checked~.slide-1 {
+#r1:checked ~ .slide-1 {
   margin-left: 0;
 }
 
-#r2:checked~.slide-1 {
+#r2:checked ~ .slide-1 {
   margin-left: -20%;
 }
 
-#r3:checked~.slide-1 {
+#r3:checked ~ .slide-1 {
   margin-left: -40%;
 }
 
-#r4:checked~.slide-1 {
+#r4:checked ~ .slide-1 {
   margin-left: -60%;
 }
 
@@ -1597,9 +1602,11 @@ input[name="r"] {
 /*START css for our-people */
 
 .Who-we-are {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(51, 37, 37, 0.521),
-      rgba(46, 4, 4, 0.425) 10%),
+      rgba(46, 4, 4, 0.425) 10%
+    ),
     url(assets/who-we-are-banner-image.jpg) no-repeat;
   background-size: cover;
   width: 100%;
@@ -1646,63 +1653,25 @@ input[name="r"] {
   line-height: 1.5;
 }
 
-.people-card h2,
-p {
+.card-text {
   padding: 10px;
 }
 
-.ripple {
-  cursor: pointer;
-  outline: none;
-  padding: 8px 10px;
-  margin: 10px;
-  background-color: #a80000;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  width: 100px;
-  float: right;
-  box-shadow: 0 2px 2px #b8b8b8;
-  position: relative;
-  overflow: hidden;
-}
-
-.ripple::before {
-  content: "";
-  position: absolute;
-  background-color: #eee;
-  padding: 50%;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
-  transition: transform 1s, opacity 1s;
-}
-
-.ripple:active::before {
-  transition: 0s;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(0);
+.cards-text {
+  padding: 0px 10px 10px 10px;
 }
 
 .people-card img {
   border-radius: 5px 5px 0px 0px;
 }
 
-.quote {
-  width: 90%;
-  text-align: center;
-  border: 2px solid #a80000;
-  margin-top: 5px;
-  font-family: germania-one, serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 @media (min-width: 768px) {
   .Who-we-are {
     height: 400px;
+  }
+
+  .people-card {
+    width: 330px;
   }
 
   .people-card img {
@@ -1744,9 +1713,11 @@ p {
 /*START css for our-services */
 
 .services-banner {
-  background: linear-gradient(60deg,
+  background: linear-gradient(
+      60deg,
       rgba(54, 50, 50, 0.521),
-      rgba(46, 4, 4, 0.425) 98%),
+      rgba(46, 4, 4, 0.425) 98%
+    ),
     url(assets/services-banner-image.jpg) no-repeat;
   background-size: cover;
   width: 100%;
