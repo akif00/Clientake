@@ -2669,7 +2669,13 @@ input[name="r"] {
     margin: 20px 15px;
 }
 
+.claim-content p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
 .claim-table {
+    max-width: 350px;
     margin: 10px 0;
     padding-bottom: 10px;
     border: 1px solid #ccc;
@@ -2697,3 +2703,30 @@ input[name="r"] {
 
 
 /*end of disclaimer style*/
+
+
+/* sitemap */
+
+.sitemap {
+    background: linear-gradient( 60deg, rgba(51, 37, 37, 0.521), rgba(46, 4, 4, 0.425) 10%), url(assets/sitemap.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sitemap h1 {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 3rem;
+}
+
+.our-pages {
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+
+/*end of sitemap style */
