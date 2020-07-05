@@ -2728,5 +2728,45 @@ input[name="r"] {
     margin: 15px;
 }
 
+.our-pages ul li {
+    margin: 10px 0 0 30px;
+}
+
+.our-pages ul li:nth-child(1) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li:nth-child(6) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li:nth-child(8) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li:nth-child(9) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li:nth-child(10) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li:nth-child(11) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.our-pages ul li a {
+    color: #192e3e;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
 
 /*end of sitemap style */
